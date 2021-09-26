@@ -1,0 +1,38 @@
+@charset "utf-8";
+body {
+    overflow: scroll;
+    background-image: url(/static/images/abc.jpg);
+}
+
+
+/* Code animation */
+
+@keyframes color_header {
+    0% {
+        background-color: rgb(183, 221, 208);
+    }
+    25% {
+        background-color: rgb(122, 255, 200);
+    }
+    50% {
+        background-color: rgb(190, 241, 95);
+    }
+    100% {
+        background-color: rgb(149, 233, 116);
+    }
+}
+
+header {
+    padding: 5px;
+    max-width: auto;
+    max-height: auto;
+    margin: auto;
+    border: 1px;
+    font-weight: bold;
+    font-size: 1vw;
+    color: blue;
+    animation-name: color_header;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 7px;
+}
